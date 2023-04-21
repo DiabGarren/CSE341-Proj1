@@ -1,4 +1,13 @@
-GET http://localhost:3000 HTTP/1.1
+GET http://localhost:3000/ HTTP/1.1
+
+###
+GET http://localhost:3000/localhost:3000/64428a06a0b0e0e42501386f HTTP/1.1
+
+###
+GET http://localhost:3000/localhost:3000/64428a06a0b0e0e425013870 HTTP/1.1
+
+###
+GET http://localhost:3000/localhost:3000/64428a06a0b0e0e425013871 HTTP/1.1
 
 ###
 GET https://cse341-proj1.onrender.com HTTP/1.1
