@@ -1,13 +1,40 @@
-GET http://localhost:3000/ HTTP/1.1
+GET http://localhost:3000/contacts/ HTTP/1.1
 
 ###
-GET http://localhost:3000/localhost:3000/64428a06a0b0e0e42501386f HTTP/1.1
+POST http://localhost:3000/contacts/ HTTP/1.1
+content-Type: application/json
+
+{
+    "firstName": "Michael",
+    "lastName": "Dunn",
+    "email": "md@gmail.com",
+    "favoriteColor": "purple",
+    "birthday": "16/09/2003"
+}
 
 ###
-GET http://localhost:3000/localhost:3000/64428a06a0b0e0e425013870 HTTP/1.1
+PUT http://localhost:3000/contacts/64428a06a0b0e0e42501386f HTTP/1.1
+content-Type: application/json
+
+{
+    "firstName": "Mark",
+    "lastName": "Diab",
+    "email": "garrendiab@gmail.com",
+    "favoriteColor": "Red",
+    "birthday": "16/09/2003"
+}
 
 ###
-GET http://localhost:3000/localhost:3000/64428a06a0b0e0e425013871 HTTP/1.1
+DELETE http://localhost:3000/contacts/644910b7037c3a3eca350809 HTTP/1.1
 
 ###
-GET https://cse341-proj1.onrender.com HTTP/1.1
+GET http://localhost:3000/contacts/64428a06a0b0e0e42501386f HTTP/1.1
+
+###
+GET http://localhost:3000/contacts/64428a06a0b0e0e425013870 HTTP/1.1
+
+###
+GET http://localhost:3000/contacts/64428a06a0b0e0e425013871 HTTP/1.1
+
+###
+GET https://cse341-proj1.onrender.com/contacts/ HTTP/1.1
