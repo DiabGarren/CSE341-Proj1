@@ -7,9 +7,11 @@ const port = process.env.PORT || 3000;
 
 
 app
+    // .use(cors())
     .use(bodyParser.json())
     .use((req, res, next) => {
         res.setHeader('Access-Control-Allow-Origin', '*');
+        res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
         next();
     })
     .use('/', require('./routes'));
