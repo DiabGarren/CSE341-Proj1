@@ -17,14 +17,11 @@ const getContact = async (req, res) => {
     /*
       #swagger.description = 'Get contact by ID'
     */
-    const result = await mongodb.getDb().db().collection('contacts').find();
+    const id = new objectId(req.params.id);
+    const result = await mongodb.getDb().db().collection('contacts').find({ _id: id });
     result.toArray().then((lists) => {
         res.setHeader('Content-Type', 'application/json');
-        lists.forEach((contact) => {
-            if (contact._id == req.params.id) {
-                res.status(200).json(contact);
-            }
-        });
+        res.status(200).json(lists[0]);
     });
 };
 
