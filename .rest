@@ -25,7 +25,7 @@ content-Type: application/json
 }
 
 ###
-DELETE http://localhost:3000/contacts/64491aebc30e85df9e78ffcb HTTP/1.1
+DELETE http://localhost:3000/contacts/644c5d705e101ee5629855b4 HTTP/1.1
 
 ###
 GET http://localhost:3000/contacts/64428a06a0b0e0e42501386f HTTP/1.1
@@ -49,6 +49,18 @@ content-Type: application/json
     "email": "garrendiab@gmail.com",
     "favoriteColor": "Red",
     "birthday": "16/09/2003"
+}
+
+###
+PUT https://cse341-proj1.onrender.com/contacts/64428a06a0b0e0e42501386f HTTP/1.1
+content-Type: application/json
+
+{
+    "firstName": "Garren",
+    "lastName": "Diab",
+    "email": "garrendiab@gmail.com",
+    "favoriteColor": "Blue",
+    "birthday": "04/06/2002"
 }
 
 ###
