@@ -37,7 +37,19 @@ GET http://localhost:3000/contacts/64428a06a0b0e0e425013870 HTTP/1.1
 GET http://localhost:3000/contacts/64428a06a0b0e0e425013871 HTTP/1.1
 
 ###
-GET https://cse341-proj1.onrender.com/contacts/ HTTP/1.1
+GET https://cse341-proj1.onrender.com/contacts HTTP/1.1
+
+###
+POST https://cse341-proj1.onrender.com/contacts HTTP/1.1
+content-Type: application/json
+
+{
+    "firstName": "Michael",
+    "lastName": "Dunn",
+    "email": "md@gmail.com",
+    "favoriteColor": "purple",
+    "birthday": "16/09/2003"
+}
 
 ###
 PUT https://cse341-proj1.onrender.com/contacts/64428a06a0b0e0e42501386f HTTP/1.1
