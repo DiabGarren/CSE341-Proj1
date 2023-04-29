@@ -57,6 +57,7 @@ const updateContact = async (req, res) => {
         birthday: req.body.birthday
     };
     const response = await mongodb.getDb().db().collection('contacts').replaceOne({ _id: id }, contact);
+    console.log(response);
     if (response.acknowledged) {
         res.status(204).send();
     } else {
